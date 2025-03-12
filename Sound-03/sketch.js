@@ -32,17 +32,8 @@ function draw() {
 }
 
 function mouseClicked() {
-  startAudioContext();
+  Tone.Start();
+  console.log("tone start");
   noiseEnv.triggerAttackRelease(4);
   imageOn = true;
-}
-
-function startAudioContext() {
-  if(Tone.context.state != 'running') {
-    Tone.start();
-    console.log("Audio context started");
-  }
-  else {
-    console.log("Audio context is already running");
-  }
 }
