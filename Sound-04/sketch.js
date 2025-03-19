@@ -106,10 +106,14 @@ part3 = new Tone.Part(((time, value) => {
   synth1.triggerAttackRelease(value.note, value.dur, time);
 }),
 [//perfect score music
-  {time: 0, note: ["C4", "D4"], dur: "4n"},//measure 1
-  {time: "0:1", note: ["G4", "B4"], dur: "4n"},
-  {time: "0:2", note: ["A4", "B4"], dur: "4n"},
-  {time: "0:2", note: ["A4", "B4"], dur: "4n"}
+  {time: 0, note: "C4", dur: "4n"},//measure 1
+  {time: "0:1", note: "D4", dur: "4n"},
+  {time: "0:2", note: "G4", dur: "4n"},
+  {time: "0:3", note: "B4", dur: "4n"},
+  {time: "1:0", note: "A4", dur: "4n"},//measure 2
+  {time: "1:1", note: "B4", dur: "4n"},
+  {time: "1:2", note: "A4", dur: "4n"},
+  {time: "1:3", note: "B4", dur: "4n"}
 ]
 ).start();
 part3.loop = true;
